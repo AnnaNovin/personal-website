@@ -7,6 +7,13 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
 h1 {
     font-family: 'Italiana', serif;
     font-size: 60px;
@@ -14,20 +21,76 @@ h1 {
     margin: 0; /* Remove default margin */
 }
 
-.about-box {
+
+h2 {
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-container {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: black;
-    width: 700px;
+    max-width: 900px;
     text-align: center;
     padding: 10px;
     border: none;
     background: none;
     word-wrap: break-word;
+    margin: 0 auto; /* Center the "About" section horizontally */
 }
 
+.projects-container {
+    position: absolute;
+    top: 100vh; /* Move it down by the height of the viewport */
+    padding: 20px;
+    max-width: 40%; /* Ensure it takes up the full width */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the screen height */
+    max-height: calc(100vh - 20px); /* Set a maximum height to prevent it from extending too far */
+    text-align: left;
+    border: none;
+    margin: 0 auto; /* Center the "About" section horizontally */
+}
 
+.project {
+    display: flex; /* Arrange image and details in a row */
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-image {
+    width: 100px; /* Adjust image width as needed */
+    height: 100%; /* Maintain image aspect ratio */
+    margin-right: 20px; /* Add spacing between image and details */
+}
+
+.project-details {
+    flex-grow: 1; /* Allow the details to grow and fill available space */
+}
+
+.project-details a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.projects-button {
+    display: inline; /* Display as inline to remove the box */
+    color: black; /* Text color */
+    font-size: 20px;
+    font-family: 'Italiana', serif; /* Specify the desired font */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none;
+    margin: 40px auto; /* Adjust the margin to position the button */
+}
 
 
 
