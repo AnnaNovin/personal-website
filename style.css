@@ -9,7 +9,7 @@ body {
 
 p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     color: black;
 }
@@ -32,6 +32,11 @@ h2 {
 a {
     text-decoration: none;
 }
+
+.contact-info a {
+    margin-right: 6px; /* Add margin to the right of each icon to create spacing */
+}
+
 
 .about-container {
     font-family: 'Quicksand', sans-serif;
@@ -98,6 +103,23 @@ a {
     border-radius: 50%;
 }
 
+.cat-info {
+    position: fixed;
+    bottom: 3px; /* Adjust as needed for the desired distance from the bottom */
+    right: 3px; /* Adjust as needed for the desired distance from the right */
+    text-align: center;
+}
+
+.cat-info p {
+    margin-bottom: 5px; /* Add some space between the text and the image */
+    font-size: 12px;
+}
+
+.cat-info img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
 
 
 /*
