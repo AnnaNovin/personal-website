@@ -1,5 +1,11 @@
 body {
     margin: 0;
-    background: cornflowerblue;
+    background: white;
     text-align: center;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
 }
