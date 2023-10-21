@@ -1,17 +1,38 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    background: white;
-    text-align: center;
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    font-weight: bold;
+    font-family: 'Italiana', serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0; /* Remove default margin */
 }
 
-.quote {
-    font-family: "Grandslang roman", sans-serif;
-    font-size: 46px;
-    font-weight: bold;
+.about-box {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    width: 700px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background: none;
+    word-wrap: break-word;
 }
+
+
+
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Italiana', sans-serif;
+*/
