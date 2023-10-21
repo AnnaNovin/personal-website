@@ -9,3 +9,9 @@ h1 {
     font-size: 32px;
     font-weight: bold;
 }
+
+.quote {
+    font-family: "Grandslang roman", sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+}
