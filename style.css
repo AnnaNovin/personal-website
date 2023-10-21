@@ -51,9 +51,9 @@ a {
     position: absolute;
     top: 100vh; /* Move it down by the height of the viewport */
     padding: 20px;
-    max-width: 40%; /* Ensure it takes up the full width */
+    max-width: 50%; /* Ensure it takes up the full width */
     overflow-y: auto; /* Add vertical scroll if content exceeds the screen height */
-    max-height: calc(100vh - 20px); /* Set a maximum height to prevent it from extending too far */
+    max-height: 200vh; /* Set a maximum height to prevent it from extending too far */
     text-align: left;
     border: none;
     margin: 0 auto; /* Center the "About" section horizontally */
@@ -63,12 +63,6 @@ a {
     display: flex; /* Arrange image and details in a row */
     align-items: flex-start;
     margin-bottom: 50px;
-}
-
-.project-image {
-    width: 100px; /* Adjust image width as needed */
-    height: 100%; /* Maintain image aspect ratio */
-    margin-right: 20px; /* Add spacing between image and details */
 }
 
 .project-details {
@@ -90,6 +84,18 @@ a {
     font-weight: bold; /* Make the text bold */
     text-decoration: none;
     margin: 40px auto; /* Adjust the margin to position the button */
+}
+
+.project-image {
+    width: 300px; /* Set the width of the image as desired */
+    height: 300px; /* Set the height of the image as desired */
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 
