@@ -60,11 +60,14 @@ a {
     font-size: 23px;
     font-weight: bold;
     color: black;
+    transition: color 0.3s;
 }
 
 .navigation a:hover {
-    background-color: #9A9AEB;
+    color: #9A9AEB; /
+    background-color: transparent;
 }
+
 
 .cat-info {
     position: fixed;
