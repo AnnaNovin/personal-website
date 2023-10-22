@@ -1,8 +1,114 @@
+/* page style */
 .page-title {
+    margin-top:60px;
     text-align: center;
     font-family: 'Italiana', serif;
     font-size: 50px;
     font-weight: 600;
     color: black;
-    /* Add any other specific styling you want */
+}
+
+.page-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.page-image img {
+    width: 341px;
+    height: auto;
+    border-radius: 70%;
+}
+
+/* project details style */
+.project-title {
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.project-supervision {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+}
+
+.project-description {
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+}
+
+.project-description a {
+    /* text-decoration: none; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px !important; /* Adjust the size as needed */
+    font-weight: 400 !important; /* Maintain the same weight */
+
+    color: black;
+}
+
+.project-languages {
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #acacac;
+}
+
+.projects-container {
+    max-width: 50%;
+    margin: 10px auto; /* Adjust the margin to center the container */
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 100vh;
+    text-align: center;
+    border: none;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project-details a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 60px auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: 'Italiana', serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s;
+
+}
+
+.navigation a:hover {
+    color: #740643;
+    background-color: transparent;
 }
