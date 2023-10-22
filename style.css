@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     margin: 0;
 }
 
@@ -76,10 +76,9 @@ a {
 }
 
 .navigation a:hover {
-    color: #9c0240; /
+    color: #5258df; /
     background-color: transparent;
 }
-
 
 .cat-info {
     position: fixed;
@@ -98,23 +97,3 @@ a {
     height: 90px;
     border-radius: 50%;
 }
-
-
-
-
-/*
-.quote-container {
-    text-align: center;
-}
-
-.quote {
-    font-family: 'Courier Prime', monospace;
-    font-size: 18px;
-    color: darkgrey;
-    margin-top: 10px;
-}
-
-font-family: 'Montserrat', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Italiana', sans-serif;
-*/
