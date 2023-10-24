@@ -1,6 +1,7 @@
 const catImage = document.querySelector('.cat-info img');
 const imageSources = [
     'images/cleo2.jpg',
+    'images/rivendell.jpg'
 ];
 
 let currentImageIndex = 0;
