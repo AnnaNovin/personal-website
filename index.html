@@ -10,7 +10,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Italiana&family=Montserrat&family=Quicksand&display=swap');
     </style>
-    <script src="cleo-slideshow.js"></script>
 </head>
 
 <body>
@@ -43,7 +42,7 @@
 
     <div class="cat-info">
         <p>Meet Cleo ❤️</p>
-        <img src="images/cleo2.jpg" alt="Cleo the Cat">
+        <img id="cat-image" src="images/cleo2.jpg" alt="Cleo the Cat">
     </div>
 
     <div class="navigation">
@@ -58,6 +57,17 @@
         <p class="quote">"The world isn't in your books and maps, it's out there." -Gandalf</p>
     </div>
     -->
+
+    <script>
+        const catImage = document.getElementById("cat-image");
+        let imageSize = 90;
+
+        catImage.addEventListener("click", function() {
+            imageSize += 10; // Increase the image size by 10 pixels
+            catImage.style.width = imageSize + "px";
+            catImage.style.height = imageSize + "px";
+        });
+    </script>
 
 </body>
 </html>
