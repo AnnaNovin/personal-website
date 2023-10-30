@@ -1,0 +1,35 @@
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: 'Italiana', serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s;
+
+}
+
+.navigation a:hover {
+    color: #5258df;
+    background-color: transparent;
+}
+
+.page-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-image img {
+    width: 200px;
+    height: auto;
+}
