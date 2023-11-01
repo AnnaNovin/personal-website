@@ -33,6 +33,10 @@
     align-items: center;
 }
 
+.container a {
+    color: black;
+}
+
 .content {
     text-align: left;
     font-family: 'Quicksand', sans-serif;
