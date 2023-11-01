@@ -22,14 +22,34 @@
     background-color: transparent;
 }
 
-.page-image {
+
+/* ----------------------------------- */
+.container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 900px;
+    padding: 20px;
+    margin: 100px auto;
+    align-items: center;
 }
 
-.page-image img {
+.content {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    padding: 10px;
+    flex: 1; /* Allow the content to grow to fill the container */
+}
+
+.image {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+img {
     width: 200px;
     height: auto;
 }
