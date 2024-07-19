@@ -1,100 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base styles */
 body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* Base font size */
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 95vh;
-    margin: 0;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the body covers at least the viewport height */
 }
 
-p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: black;
+/* Heading styles */
+h1, h2 {
+    color: #111111;
+    text-align: center;
 }
 
 h1 {
-    font-family: 'Italiana', serif;
-    font-size: 60px;
+    font-size: 2.5em;
     font-weight: 600;
-    margin: 0;
+    margin: 10px;
 }
 
 h2 {
-    font-family: 'Italiana', serif;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 0;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
-a {
-    text-decoration: none;
+/*!* Image styles *!*/
+/*.page-image {*/
+/*    width: 100%; !* Make the container fill the width of the screen *!*/
+/*    text-align: center; !* Center the image *!*/
+/*}*/
+
+/*.page-image img {*/
+/*    max-height: 150px; !* Limit height to make the image slimmer *!*/
+/*    border-radius: 50%; !* Makes the image round *!*/
+/*}*/
+
+/* About container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px; /* Ensure there's padding on the sides */
+    margin: 0 auto; /* Center the container */
 }
 
-.page-image {
+/* Navigation */
+.navigation {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
-}
-
-.page-image img {
-    width: 400px;
-    height: auto;
-    border-radius: 70%;
-}
-
-.about-container {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: black;
-    max-width: 900px;
-    text-align: center;
-    padding: 10px;
-    border: none;
-    background: none;
-    word-wrap: break-word;
-    margin: 0 auto;
-}
-
-.contact-info a:not(:last-child) {
-    margin-right: 6px;
+    gap: 20px; /* Adjust the spacing between items */
+    margin: 20px 0; /* Adjust margin if needed */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .navigation a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 15px auto;
-    border-radius: 5px;
-    font-family: 'Italiana', serif;
-    font-size: 23px;
-    font-weight: bold;
-    color: black;
-    transition: color 0.3s;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none; /* Remove default underline */
+    font-weight: 500; /* Optional: make the text slightly bolder */
+    position: relative; /* Required for positioning the pseudo-element */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
 }
 
-.navigation a:hover {
-    color: #5258df; /
-    background-color: transparent;
+.navigation a::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning relative to the link */
+    left: 0;
+    bottom: -2px; /* Space between text and underline */
+    width: 100%;
+    height: 3px; /* Adjust thickness of the underline */
+    background-color: #4361ee; /* Underline color */
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: bottom right; /* Scale from the right */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
 }
 
-.cat-info {
-    position: fixed;
-    bottom: 15px;
-    left: 20px;
-    text-align: center;
+.navigation a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+    transform-origin: bottom left; /* Scale from the left */
 }
 
-.cat-info p {
-    margin-bottom: 5px;
-    font-size: 12px;
+/* Contact info */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for spacing */
+    margin: 20px 0; /* Adjusted margin */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
 }
 
-.cat-info img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+
+
+/*!* Container *!*/
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    max-width: 90%; !* Limit the width to 90% of the viewport *!*/
+/*    max-width: 800px; !* Maximum width for larger screens *!*/
+/*    width: 100%;*/
+/*}*/
+
+
+
+
+
+
+
+
+/*.cat-info {*/
+/*    position: fixed;*/
+/*    bottom: 15px;*/
+/*    left: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.cat-info p {*/
+/*    margin-bottom: 5px;*/
+/*    font-size: 12px;*/
+/*}*/
+
+/*.cat-info img {*/
+/*    width: 90px;*/
+/*    height: 90px;*/
+/*    border-radius: 50%;*/
+/*    cursor: pointer;*/
+/*}*/
